@@ -41,6 +41,8 @@ public class Examen {
 
             Arrays.sort(bolas);
         }
+        System.out.println("*** BIENVENIDO AL BINGO DEL CASINO VALENCIANO: ***");
+        System.out.println("");
         System.out.println(cant+" bolas extraidas hasta ahora "+ Arrays.toString(bolas));
 
         System.out.println("*** Introduce los datos del cartón ******");
@@ -66,7 +68,9 @@ public class Examen {
             System.out.println();
         }
 
+        System.out.println("");
         System.out.println("PREMIOS: ");
+        System.out.println("");
 
         for (int i = 0; i < carton.length; i++){
             for (int j = 0; j < carton[i].length; j++) {
