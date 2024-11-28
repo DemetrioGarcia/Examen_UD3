@@ -85,24 +85,22 @@ public class Examen {
         }
         else {
             System.out.println("NO HAY BINGO....");
-        }
 
-        for (int i = 0; i < carton.length; i++) {
-            linea=true;
-            System.out.print("Fila"+ (i+1) + ":");
-            for (int j = 0; j < carton[i].length; j++) {
-                if (Arrays.asList(bolas).contains(carton[i][j])) {
+            for (int i = 0; i < carton.length; i++) {
+                linea = true;
+                System.out.print("Fila" + (i + 1) + ":");
+                for (int j = 0; j < carton[i].length; j++) {
+                    if (Arrays.asList(bolas).contains(carton[i][j])) {
 
+                    } else {
+                        linea = false;
+                    }
                 }
-                else {
-                    linea = false;
+                if (linea) {
+                    System.out.println("CORRECTA!!");
+                } else {
+                    System.out.println("NO");
                 }
-            }
-            if (linea){
-                System.out.println("CORRECTA!!");
-            }
-            else {
-                System.out.println("NO");
             }
         }
     }
